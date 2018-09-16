@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
                         .setContentIntent(pi)
                         .setAutoCancel(true)//取消系统状态栏上的通知图标 方法一
+                        //        .setStyle(new NotificationCompat.BigTextStyle().bigText("Learn how to build notifications, send and sync data, and use voice actions. Get the official Android IDE and developer tools to build apps for Android."))
                         .build();
                 manager.notify(1, notification);
                 break;
