@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .setSmallIcon(R.mipmap.ic_launcher)
                         .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher))
                         .setContentIntent(pi)
+                        .setAutoCancel(true)//取消系统状态栏上的通知图标 方法一
                         .build();
                 manager.notify(1, notification);
                 break;
